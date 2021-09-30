@@ -3,6 +3,7 @@ const INTERVAL = 60;
 var timeLeft = INTERVAL;
 var tasks;
 const DAILYSCHEDULE_KEY = "daily_schedule";
+var currentDate = moment().format('MM/DD/YYYY');
 init();
 
 function init() {
@@ -10,7 +11,7 @@ function init() {
   generateRows(9, 17);
   getCurrentTime();
 }
-
+$('#currentDay').text(currentDate);
 // Function for 60 second timer for formatting
 function timer() {
     timeInterval = setInterval(function() {
@@ -62,13 +63,13 @@ function addRow(rowID, container, labelText) {
 
   //generate the first child row (label field)
   var labelDiv = $(document.createElement("div"));
-  labelDiv.addClass("col-1 hour");
+  labelDiv.addClass("col-lg-1 col-md-2 hour");
   labelDiv.text (labelText);
   row.append(labelDiv);
 
   //generate the second child row (input field)  
   var inputDiv = $(document.createElement("div"));
-  inputDiv.addClass("col-10");
+  inputDiv.addClass("col-lg-10 col-md-9 col-sm-8");
   inputDiv.prop("id", rowID);
   row.append(inputDiv);
 
