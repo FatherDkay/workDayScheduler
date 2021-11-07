@@ -31,4 +31,4 @@ https://www.github.com/FatherDkay
 paul.d.bailey@hotmail.com
 
 ## Screenshot
-![ScreenShot](/public/assets/WorkdayScreenShot.jpg "Screen Shot of Employee Tracker")
+![ScreenShot](/assets/WorkdayScreenShot.jpg "Screen Shot of Employee Tracker")
